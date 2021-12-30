@@ -11,11 +11,11 @@ public class Decimale_to_Binario {
 	}
 	
 	public int Convert_B() {
-		do {
+		while(numero != 1) {
 			resto = numero % 2;
 			numero /= 2;
 			string.append(Integer.toString(resto));
-		} while(numero != 1);
+		} 
 		string.append('1');
 		return Integer.parseInt(string.reverse().toString());
 	}
